@@ -1,0 +1,356 @@
+2021-06-23 15:27:56,685 INFO org.springframework.boot.StartupInfoLogger Starting BuracosDcApiApplication using Java 11.0.5 on PREDATOR_REINALDO with PID 9896 (D:\Projects\BuracosDCApi\target\classes started by manom in D:\Projects\BuracosDCApi)
+2021-06-23 15:27:56,688 DEBUG org.springframework.boot.StartupInfoLogger Running with Spring Boot v2.5.1, Spring v5.3.8
+2021-06-23 15:27:56,688 INFO org.springframework.boot.SpringApplication The following profiles are active: @spring.profiles.active@
+2021-06-23 15:27:57,965 WARN org.springframework.context.support.AbstractApplicationContext Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.BuracosDCApi.BuracosDcApiApplication]; nested exception is org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'jwtTokenFilter' for bean class [com.BuracosDCApi.core.security.JwtTokenFilter] conflicts with existing, non-compatible bean definition of same name and class [com.BuracosDCApi.core.filter.JwtTokenFilter]
+2021-06-23 15:27:57,993 ERROR org.springframework.boot.SpringApplication Application run failed
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.BuracosDCApi.BuracosDcApiApplication]; nested exception is org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'jwtTokenFilter' for bean class [com.BuracosDCApi.core.security.JwtTokenFilter] conflicts with existing, non-compatible bean definition of same name and class [com.BuracosDCApi.core.filter.JwtTokenFilter]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:189)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:331)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:247)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:311)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:112)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:746)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:564)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at com.BuracosDCApi.BuracosDcApiApplication.main(BuracosDcApiApplication.java:20)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'jwtTokenFilter' for bean class [com.BuracosDCApi.core.security.JwtTokenFilter] conflicts with existing, non-compatible bean definition of same name and class [com.BuracosDCApi.core.filter.JwtTokenFilter]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:349)
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:287)
+	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:132)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:296)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:250)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:207)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:175)
+	... 18 common frames omitted
+2021-06-23 15:31:39,032 INFO org.springframework.boot.StartupInfoLogger Starting BuracosDcApiApplication using Java 11.0.5 on PREDATOR_REINALDO with PID 7432 (D:\Projects\BuracosDCApi\target\classes started by manom in D:\Projects\BuracosDCApi)
+2021-06-23 15:31:39,034 DEBUG org.springframework.boot.StartupInfoLogger Running with Spring Boot v2.5.1, Spring v5.3.8
+2021-06-23 15:31:39,035 INFO org.springframework.boot.SpringApplication The following profiles are active: @spring.profiles.active@
+2021-06-23 15:31:40,339 WARN org.springframework.context.support.AbstractApplicationContext Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.BuracosDCApi.BuracosDcApiApplication]; nested exception is java.io.FileNotFoundException: class path resource [jwt.properties] cannot be opened because it does not exist
+2021-06-23 15:31:40,367 ERROR org.springframework.boot.SpringApplication Application run failed
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.BuracosDCApi.BuracosDcApiApplication]; nested exception is java.io.FileNotFoundException: class path resource [jwt.properties] cannot be opened because it does not exist
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:189)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:331)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:247)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:311)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:112)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:746)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:564)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at com.BuracosDCApi.BuracosDcApiApplication.main(BuracosDcApiApplication.java:20)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.io.FileNotFoundException: class path resource [jwt.properties] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:187)
+	at org.springframework.core.io.support.EncodedResource.getInputStream(EncodedResource.java:159)
+	at org.springframework.core.io.support.PropertiesLoaderUtils.fillProperties(PropertiesLoaderUtils.java:110)
+	at org.springframework.core.io.support.PropertiesLoaderUtils.fillProperties(PropertiesLoaderUtils.java:81)
+	at org.springframework.core.io.support.PropertiesLoaderUtils.loadProperties(PropertiesLoaderUtils.java:67)
+	at org.springframework.core.io.support.ResourcePropertySource.<init>(ResourcePropertySource.java:67)
+	at org.springframework.core.io.support.DefaultPropertySourceFactory.createPropertySource(DefaultPropertySourceFactory.java:37)
+	at org.springframework.context.annotation.ConfigurationClassParser.processPropertySource(ConfigurationClassParser.java:463)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:280)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:250)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:199)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:304)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:250)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:207)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:175)
+	... 18 common frames omitted
+2021-06-23 15:49:24,396 INFO org.springframework.boot.StartupInfoLogger Starting BuracosDcApiApplication using Java 11.0.5 on PREDATOR_REINALDO with PID 10972 (D:\Projects\BuracosDCApi\target\classes started by manom in D:\Projects\BuracosDCApi)
+2021-06-23 15:49:24,400 DEBUG org.springframework.boot.StartupInfoLogger Running with Spring Boot v2.5.1, Spring v5.3.8
+2021-06-23 15:49:24,400 INFO org.springframework.boot.SpringApplication The following profiles are active: @spring.profiles.active@
+2021-06-23 15:49:27,936 ERROR org.springframework.boot.web.embedded.tomcat.TomcatStarter Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'jwtTokenFilter': Unsatisfied dependency expressed through method 'setAuthenticationManager' parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.security.authentication.AuthenticationManager' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2021-06-23 15:49:27,980 WARN org.springframework.context.support.AbstractApplicationContext Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+2021-06-23 15:49:28,007 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of method setAuthenticationManager in com.BuracosDCApi.core.filter.JwtTokenFilter required a bean of type 'org.springframework.security.authentication.AuthenticationManager' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.authentication.AuthenticationManager' in your configuration.
+
+2021-06-23 15:52:50,486 INFO org.springframework.boot.StartupInfoLogger Starting BuracosDcApiApplication using Java 11.0.5 on PREDATOR_REINALDO with PID 19636 (D:\Projects\BuracosDCApi\target\classes started by manom in D:\Projects\BuracosDCApi)
+2021-06-23 15:52:50,488 DEBUG org.springframework.boot.StartupInfoLogger Running with Spring Boot v2.5.1, Spring v5.3.8
+2021-06-23 15:52:50,489 INFO org.springframework.boot.SpringApplication The following profiles are active: @spring.profiles.active@
+2021-06-23 15:52:53,934 ERROR org.springframework.boot.web.embedded.tomcat.TomcatStarter Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'jwtTokenFilter' defined in file [D:\Projects\BuracosDCApi\target\classes\com\BuracosDCApi\core\filter\JwtTokenFilter.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jwtTokenProvider': Unsatisfied dependency expressed through field 'userDetailsService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.security.core.userdetails.UserDetailsService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2021-06-23 15:52:53,968 WARN org.springframework.context.support.AbstractApplicationContext Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+2021-06-23 15:52:53,995 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field userDetailsService in com.BuracosDCApi.core.security.JwtTokenProvider required a bean of type 'org.springframework.security.core.userdetails.UserDetailsService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.core.userdetails.UserDetailsService' in your configuration.
+
+2021-06-23 15:55:30,352 INFO org.springframework.boot.StartupInfoLogger Starting BuracosDcApiApplication using Java 11.0.5 on PREDATOR_REINALDO with PID 172 (D:\Projects\BuracosDCApi\target\classes started by manom in D:\Projects\BuracosDCApi)
+2021-06-23 15:55:30,355 DEBUG org.springframework.boot.StartupInfoLogger Running with Spring Boot v2.5.1, Spring v5.3.8
+2021-06-23 15:55:30,356 INFO org.springframework.boot.SpringApplication The following profiles are active: @spring.profiles.active@
+2021-06-23 15:55:33,789 ERROR org.springframework.boot.web.embedded.tomcat.TomcatStarter Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'jwtTokenFilter' defined in file [D:\Projects\BuracosDCApi\target\classes\com\BuracosDCApi\core\filter\JwtTokenFilter.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jwtTokenProvider': Unsatisfied dependency expressed through field 'userDetailsService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'customUserDetailsService' defined in file [D:\Projects\BuracosDCApi\target\classes\com\BuracosDCApi\core\security\CustomUserDetailsService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRepository' defined in com.BuracosDCApi.core.repository.UserRepository defined in @EnableJpaRepositories declared on BuracosDcApiApplication: Cannot create inner bean '(inner bean)#3a239799' of type [org.springframework.orm.jpa.SharedEntityManagerCreator] while setting bean property 'entityManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#3a239799': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'entityManagerFactory' available
+2021-06-23 15:55:33,827 WARN org.springframework.context.support.AbstractApplicationContext Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+2021-06-23 15:55:33,863 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.BuracosDCApi.core.security.CustomUserDetailsService required a bean named 'entityManagerFactory' that could not be found.
+
+
+Action:
+
+Consider defining a bean named 'entityManagerFactory' in your configuration.
+
+2021-06-23 15:57:52,601 INFO org.springframework.boot.StartupInfoLogger Starting BuracosDcApiApplication using Java 11.0.5 on PREDATOR_REINALDO with PID 11368 (D:\Projects\BuracosDCApi\target\classes started by manom in D:\Projects\BuracosDCApi)
+2021-06-23 15:57:52,604 DEBUG org.springframework.boot.StartupInfoLogger Running with Spring Boot v2.5.1, Spring v5.3.8
+2021-06-23 15:57:52,604 INFO org.springframework.boot.SpringApplication The following profiles are active: @spring.profiles.active@
+2021-06-23 15:57:56,016 ERROR org.springframework.boot.web.embedded.tomcat.TomcatStarter Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'jwtTokenFilter' defined in file [D:\Projects\BuracosDCApi\target\classes\com\BuracosDCApi\core\filter\JwtTokenFilter.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jwtTokenProvider': Unsatisfied dependency expressed through field 'userDetailsService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'customUserDetailsService' defined in file [D:\Projects\BuracosDCApi\target\classes\com\BuracosDCApi\core\security\CustomUserDetailsService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRepository' defined in com.BuracosDCApi.core.repository.UserRepository defined in @EnableJpaRepositories declared on BuracosDcApiApplication: Cannot create inner bean '(inner bean)#7979cc4e' of type [org.springframework.orm.jpa.SharedEntityManagerCreator] while setting bean property 'entityManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#7979cc4e': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'entityManagerFactory' available
+2021-06-23 15:57:56,059 WARN org.springframework.context.support.AbstractApplicationContext Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+2021-06-23 15:57:56,084 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.BuracosDCApi.core.security.CustomUserDetailsService required a bean named 'entityManagerFactory' that could not be found.
+
+
+Action:
+
+Consider defining a bean named 'entityManagerFactory' in your configuration.
+
+2021-06-23 16:02:38,921 INFO org.springframework.boot.StartupInfoLogger Starting BuracosDcApiApplication using Java 11.0.5 on PREDATOR_REINALDO with PID 22916 (D:\Projects\BuracosDCApi\target\classes started by manom in D:\Projects\BuracosDCApi)
+2021-06-23 16:02:38,924 DEBUG org.springframework.boot.StartupInfoLogger Running with Spring Boot v2.5.1, Spring v5.3.8
+2021-06-23 16:02:38,924 INFO org.springframework.boot.SpringApplication The following profiles are active: @spring.profiles.active@
+2021-06-23 16:02:42,315 ERROR org.springframework.boot.web.embedded.tomcat.TomcatStarter Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'jwtTokenFilter' defined in file [D:\Projects\BuracosDCApi\target\classes\com\BuracosDCApi\core\filter\JwtTokenFilter.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jwtTokenProvider': Unsatisfied dependency expressed through field 'userDetailsService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'customUserDetailsService': Unsatisfied dependency expressed through field 'usuarioRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRepository' defined in com.BuracosDCApi.core.repository.UserRepository defined in @EnableJpaRepositories declared on BuracosDcApiApplication: Cannot create inner bean '(inner bean)#36e034f5' of type [org.springframework.orm.jpa.SharedEntityManagerCreator] while setting bean property 'entityManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#36e034f5': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'entityManagerFactory' available
+2021-06-23 16:02:42,356 WARN org.springframework.context.support.AbstractApplicationContext Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+2021-06-23 16:02:42,381 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field usuarioRepository in com.BuracosDCApi.core.security.CustomUserDetailsService required a bean named 'entityManagerFactory' that could not be found.
+
+
+Action:
+
+Consider defining a bean named 'entityManagerFactory' in your configuration.
+
+2021-06-23 16:09:49,677 INFO org.springframework.boot.StartupInfoLogger Starting BuracosDcApiApplication using Java 11.0.5 on PREDATOR_REINALDO with PID 22888 (D:\Projects\BuracosDCApi\target\classes started by manom in D:\Projects\BuracosDCApi)
+2021-06-23 16:09:49,679 DEBUG org.springframework.boot.StartupInfoLogger Running with Spring Boot v2.5.1, Spring v5.3.8
+2021-06-23 16:09:49,680 INFO org.springframework.boot.SpringApplication The following profiles are active: @spring.profiles.active@
+2021-06-23 16:09:53,099 ERROR org.springframework.boot.web.embedded.tomcat.TomcatStarter Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'jwtTokenFilter' defined in file [D:\Projects\BuracosDCApi\target\classes\com\BuracosDCApi\core\filter\JwtTokenFilter.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jwtTokenProvider': Unsatisfied dependency expressed through field 'userDetailsService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'customUserDetailsService' defined in file [D:\Projects\BuracosDCApi\target\classes\com\BuracosDCApi\core\security\CustomUserDetailsService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRepository' defined in com.BuracosDCApi.core.repository.UserRepository defined in @EnableJpaRepositories declared on BuracosDcApiApplication: Cannot create inner bean '(inner bean)#17514488' of type [org.springframework.orm.jpa.SharedEntityManagerCreator] while setting bean property 'entityManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#17514488': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'entityManagerFactory' available
+2021-06-23 16:09:53,138 WARN org.springframework.context.support.AbstractApplicationContext Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+2021-06-23 16:09:53,165 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.BuracosDCApi.core.security.CustomUserDetailsService required a bean named 'entityManagerFactory' that could not be found.
+
+
+Action:
+
+Consider defining a bean named 'entityManagerFactory' in your configuration.
+
+2021-06-23 16:40:21,656 INFO org.springframework.boot.StartupInfoLogger Starting BuracosDcApiApplication using Java 11.0.5 on PREDATOR_REINALDO with PID 13080 (D:\Projects\BuracosDCApi\target\classes started by manom in D:\Projects\BuracosDCApi)
+2021-06-23 16:40:21,658 DEBUG org.springframework.boot.StartupInfoLogger Running with Spring Boot v2.5.1, Spring v5.3.8
+2021-06-23 16:40:21,658 INFO org.springframework.boot.SpringApplication The following profiles are active: @spring.profiles.active@
+2021-06-23 16:40:24,938 ERROR org.springframework.boot.web.embedded.tomcat.TomcatStarter Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'jwtTokenFilter' defined in file [D:\Projects\BuracosDCApi\target\classes\com\BuracosDCApi\core\filter\JwtTokenFilter.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jwtTokenProvider': Unsatisfied dependency expressed through field 'userDetailsService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'customUserDetailsService' defined in file [D:\Projects\BuracosDCApi\target\classes\com\BuracosDCApi\core\security\CustomUserDetailsService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRepository' defined in com.BuracosDCApi.core.repository.UserRepository defined in @EnableJpaRepositories declared on BuracosDcApiApplication: Cannot create inner bean '(inner bean)#17af58cc' of type [org.springframework.orm.jpa.SharedEntityManagerCreator] while setting bean property 'entityManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#17af58cc': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'entityManagerFactory' available
+2021-06-23 16:40:24,980 WARN org.springframework.context.support.AbstractApplicationContext Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+2021-06-23 16:40:25,005 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.BuracosDCApi.core.security.CustomUserDetailsService required a bean named 'entityManagerFactory' that could not be found.
+
+
+Action:
+
+Consider defining a bean named 'entityManagerFactory' in your configuration.
+
+2021-06-23 16:42:48,337 INFO org.springframework.boot.StartupInfoLogger Starting BuracosDcApiApplication using Java 11.0.5 on PREDATOR_REINALDO with PID 7900 (D:\Projects\BuracosDCApi\target\classes started by manom in D:\Projects\BuracosDCApi)
+2021-06-23 16:42:48,340 DEBUG org.springframework.boot.StartupInfoLogger Running with Spring Boot v2.5.1, Spring v5.3.8
+2021-06-23 16:42:48,341 INFO org.springframework.boot.SpringApplication The following profiles are active: @spring.profiles.active@
+2021-06-23 16:42:51,456 ERROR org.springframework.boot.web.embedded.tomcat.TomcatStarter Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'jwtTokenFilter' defined in file [D:\Projects\BuracosDCApi\target\classes\com\BuracosDCApi\core\filter\JwtTokenFilter.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jwtTokenProvider': Unsatisfied dependency expressed through field 'userDetailsService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'customUserDetailsService': Unsatisfied dependency expressed through field 'usuarioRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRepository' defined in com.BuracosDCApi.core.repository.UserRepository defined in @EnableJpaRepositories declared on BuracosDcApiApplication: Cannot create inner bean '(inner bean)#1209247f' of type [org.springframework.orm.jpa.SharedEntityManagerCreator] while setting bean property 'entityManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#1209247f': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'entityManagerFactory' available
+2021-06-23 16:42:51,494 WARN org.springframework.context.support.AbstractApplicationContext Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+2021-06-23 16:42:51,518 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field usuarioRepository in com.BuracosDCApi.core.security.CustomUserDetailsService required a bean named 'entityManagerFactory' that could not be found.
+
+
+Action:
+
+Consider defining a bean named 'entityManagerFactory' in your configuration.
+
+2021-06-23 16:51:31,440 INFO org.springframework.boot.StartupInfoLogger Starting BuracosDcApiApplication using Java 11.0.5 on PREDATOR_REINALDO with PID 19632 (D:\Projects\BuracosDCApi\target\classes started by manom in D:\Projects\BuracosDCApi)
+2021-06-23 16:51:31,443 DEBUG org.springframework.boot.StartupInfoLogger Running with Spring Boot v2.5.1, Spring v5.3.8
+2021-06-23 16:51:31,443 INFO org.springframework.boot.SpringApplication The following profiles are active: @spring.profiles.active@
+2021-06-23 16:51:34,513 ERROR org.springframework.boot.web.embedded.tomcat.TomcatStarter Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'jwtTokenFilter' defined in file [D:\Projects\BuracosDCApi\target\classes\com\BuracosDCApi\core\filter\JwtTokenFilter.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jwtTokenProvider': Unsatisfied dependency expressed through field 'userDetailsService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'customUserDetailsService' defined in file [D:\Projects\BuracosDCApi\target\classes\com\BuracosDCApi\core\security\CustomUserDetailsService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRepository' defined in com.BuracosDCApi.core.repository.UserRepository defined in @EnableJpaRepositories declared on BuracosDcApiApplication: Cannot create inner bean '(inner bean)#177b246f' of type [org.springframework.orm.jpa.SharedEntityManagerCreator] while setting bean property 'entityManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#177b246f': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'entityManagerFactory' available
+2021-06-23 16:51:34,554 WARN org.springframework.context.support.AbstractApplicationContext Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+2021-06-23 16:51:34,580 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.BuracosDCApi.core.security.CustomUserDetailsService required a bean named 'entityManagerFactory' that could not be found.
+
+
+Action:
+
+Consider defining a bean named 'entityManagerFactory' in your configuration.
+
+2021-06-23 16:51:49,313 INFO org.springframework.boot.StartupInfoLogger Starting BuracosDcApiApplication using Java 11.0.5 on PREDATOR_REINALDO with PID 1836 (D:\Projects\BuracosDCApi\target\classes started by manom in D:\Projects\BuracosDCApi)
+2021-06-23 16:51:49,315 DEBUG org.springframework.boot.StartupInfoLogger Running with Spring Boot v2.5.1, Spring v5.3.8
+2021-06-23 16:51:49,315 INFO org.springframework.boot.SpringApplication The following profiles are active: @spring.profiles.active@
+2021-06-23 16:51:52,356 ERROR org.springframework.boot.web.embedded.tomcat.TomcatStarter Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'jwtTokenFilter' defined in file [D:\Projects\BuracosDCApi\target\classes\com\BuracosDCApi\core\filter\JwtTokenFilter.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jwtTokenProvider': Unsatisfied dependency expressed through field 'userDetailsService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'customUserDetailsService' defined in file [D:\Projects\BuracosDCApi\target\classes\com\BuracosDCApi\core\security\CustomUserDetailsService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRepository' defined in com.BuracosDCApi.core.repository.UserRepository defined in @EnableJpaRepositories declared on BuracosDcApiApplication: Cannot create inner bean '(inner bean)#251af072' of type [org.springframework.orm.jpa.SharedEntityManagerCreator] while setting bean property 'entityManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#251af072': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'entityManagerFactory' available
+2021-06-23 16:51:52,395 WARN org.springframework.context.support.AbstractApplicationContext Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+2021-06-23 16:51:52,421 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.BuracosDCApi.core.security.CustomUserDetailsService required a bean named 'entityManagerFactory' that could not be found.
+
+
+Action:
+
+Consider defining a bean named 'entityManagerFactory' in your configuration.
+
+2021-06-23 16:55:11,222 INFO org.springframework.boot.StartupInfoLogger Starting BuracosDcApiApplication using Java 11.0.5 on PREDATOR_REINALDO with PID 19572 (D:\Projects\BuracosDCApi\target\classes started by manom in D:\Projects\BuracosDCApi)
+2021-06-23 16:55:11,225 DEBUG org.springframework.boot.StartupInfoLogger Running with Spring Boot v2.5.1, Spring v5.3.8
+2021-06-23 16:55:11,225 INFO org.springframework.boot.SpringApplication The following profiles are active: @spring.profiles.active@
+2021-06-23 16:55:14,274 ERROR org.springframework.boot.web.embedded.tomcat.TomcatStarter Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'jwtTokenFilter' defined in file [D:\Projects\BuracosDCApi\target\classes\com\BuracosDCApi\core\filter\JwtTokenFilter.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jwtTokenProvider': Unsatisfied dependency expressed through field 'userDetailsService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'customUserDetailsService' defined in file [D:\Projects\BuracosDCApi\target\classes\com\BuracosDCApi\core\security\CustomUserDetailsService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRepository' defined in com.BuracosDCApi.core.repository.UserRepository defined in @EnableJpaRepositories declared on BuracosDcApiApplication: Cannot create inner bean '(inner bean)#28a24d77' of type [org.springframework.orm.jpa.SharedEntityManagerCreator] while setting bean property 'entityManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#28a24d77': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'entityManagerFactory' available
+2021-06-23 16:55:14,309 WARN org.springframework.context.support.AbstractApplicationContext Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+2021-06-23 16:55:14,334 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.BuracosDCApi.core.security.CustomUserDetailsService required a bean named 'entityManagerFactory' that could not be found.
+
+
+Action:
+
+Consider defining a bean named 'entityManagerFactory' in your configuration.
+
+2021-06-23 16:55:28,191 INFO org.springframework.boot.StartupInfoLogger Starting BuracosDcApiApplication using Java 11.0.5 on PREDATOR_REINALDO with PID 1072 (D:\Projects\BuracosDCApi\target\classes started by manom in D:\Projects\BuracosDCApi)
+2021-06-23 16:55:28,194 DEBUG org.springframework.boot.StartupInfoLogger Running with Spring Boot v2.5.1, Spring v5.3.8
+2021-06-23 16:55:28,194 INFO org.springframework.boot.SpringApplication The following profiles are active: @spring.profiles.active@
+2021-06-23 16:55:31,222 ERROR org.springframework.boot.web.embedded.tomcat.TomcatStarter Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'jwtTokenFilter' defined in file [D:\Projects\BuracosDCApi\target\classes\com\BuracosDCApi\core\filter\JwtTokenFilter.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jwtTokenProvider': Unsatisfied dependency expressed through field 'userDetailsService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'customUserDetailsService' defined in file [D:\Projects\BuracosDCApi\target\classes\com\BuracosDCApi\core\security\CustomUserDetailsService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRepository' defined in com.BuracosDCApi.core.repository.UserRepository defined in @EnableJpaRepositories declared on BuracosDcApiApplication: Cannot create inner bean '(inner bean)#4f2c2d9f' of type [org.springframework.orm.jpa.SharedEntityManagerCreator] while setting bean property 'entityManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#4f2c2d9f': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'entityManagerFactory' available
+2021-06-23 16:55:31,258 WARN org.springframework.context.support.AbstractApplicationContext Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+2021-06-23 16:55:31,285 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.BuracosDCApi.core.security.CustomUserDetailsService required a bean named 'entityManagerFactory' that could not be found.
+
+
+Action:
+
+Consider defining a bean named 'entityManagerFactory' in your configuration.
+
+2021-06-23 17:03:20,477 INFO org.springframework.boot.StartupInfoLogger Starting BuracosDcApiApplication using Java 11.0.5 on PREDATOR_REINALDO with PID 19196 (D:\Projects\BuracosDCApi\target\classes started by manom in D:\Projects\BuracosDCApi)
+2021-06-23 17:03:20,480 DEBUG org.springframework.boot.StartupInfoLogger Running with Spring Boot v2.5.1, Spring v5.3.8
+2021-06-23 17:03:20,480 INFO org.springframework.boot.SpringApplication The following profiles are active: @spring.profiles.active@
+2021-06-23 17:03:23,531 ERROR org.springframework.boot.web.embedded.tomcat.TomcatStarter Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'jwtTokenFilter' defined in file [D:\Projects\BuracosDCApi\target\classes\com\BuracosDCApi\core\filter\JwtTokenFilter.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jwtTokenProvider': Unsatisfied dependency expressed through field 'userDetailsService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'customUserDetailsService' defined in file [D:\Projects\BuracosDCApi\target\classes\com\BuracosDCApi\core\security\CustomUserDetailsService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRepository' defined in com.BuracosDCApi.core.repository.UserRepository defined in @EnableJpaRepositories declared on BuracosDcApiApplication: Cannot create inner bean '(inner bean)#525cfeb9' of type [org.springframework.orm.jpa.SharedEntityManagerCreator] while setting bean property 'entityManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#525cfeb9': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'entityManagerFactory' available
+2021-06-23 17:03:23,569 WARN org.springframework.context.support.AbstractApplicationContext Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+2021-06-23 17:03:23,595 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.BuracosDCApi.core.security.CustomUserDetailsService required a bean named 'entityManagerFactory' that could not be found.
+
+
+Action:
+
+Consider defining a bean named 'entityManagerFactory' in your configuration.
+
+2021-06-23 17:17:34,149 INFO org.springframework.boot.StartupInfoLogger Starting BuracosDcApiApplication using Java 11.0.5 on PREDATOR_REINALDO with PID 4260 (D:\Projects\BuracosDCApi\target\classes started by manom in D:\Projects\BuracosDCApi)
+2021-06-23 17:17:34,151 DEBUG org.springframework.boot.StartupInfoLogger Running with Spring Boot v2.5.1, Spring v5.3.8
+2021-06-23 17:17:34,151 INFO org.springframework.boot.SpringApplication The following profiles are active: @spring.profiles.active@
+2021-06-23 17:17:37,298 ERROR org.springframework.boot.web.embedded.tomcat.TomcatStarter Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'jwtTokenFilter' defined in file [D:\Projects\BuracosDCApi\target\classes\com\BuracosDCApi\core\filter\JwtTokenFilter.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jwtTokenProvider': Unsatisfied dependency expressed through field 'userDetailsService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'customUserDetailsService' defined in file [D:\Projects\BuracosDCApi\target\classes\com\BuracosDCApi\core\security\CustomUserDetailsService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRepository' defined in com.BuracosDCApi.core.repository.UserRepository defined in @EnableJpaRepositories declared on BuracosDcApiApplication: Cannot create inner bean '(inner bean)#7f5208c2' of type [org.springframework.orm.jpa.SharedEntityManagerCreator] while setting bean property 'entityManager'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#7f5208c2': Cannot resolve reference to bean 'entityManagerFactory' while setting constructor argument; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'entityManagerFactory' available
+2021-06-23 17:17:37,344 WARN org.springframework.context.support.AbstractApplicationContext Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+2021-06-23 17:17:37,368 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.BuracosDCApi.core.security.CustomUserDetailsService required a bean named 'entityManagerFactory' that could not be found.
+
+
+Action:
+
+Consider defining a bean named 'entityManagerFactory' in your configuration.
+
