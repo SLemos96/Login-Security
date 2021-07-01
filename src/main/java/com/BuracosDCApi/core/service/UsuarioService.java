@@ -26,7 +26,7 @@ import com.BuracosDCApi.core.security.UsuarioHelper;
 
 @Service
 @Transactional
-public class UsarioService extends GenericService<Usuario, UsuarioRepository> {
+public class UsuarioService extends GenericService<Usuario, UsuarioRepository> {
 
 	@Autowired
 	UsuarioHelper usuarioHelper;
@@ -45,6 +45,7 @@ public class UsarioService extends GenericService<Usuario, UsuarioRepository> {
 	@Override
 	public void validate(Usuario entity) throws Exception {
 		String senha = entity.getSenha();
+		
 		if (senha == null) {
 			throw new Exception("senha nula");
 		}
@@ -69,6 +70,7 @@ public class UsarioService extends GenericService<Usuario, UsuarioRepository> {
 	 */
 	@Override
 	public Usuario save(Usuario usuario) throws Exception {
+		System.err.println(usuario.toString());
 		validate(usuario);
 		String senha = usuario.getSenha();
 		usuario.setSenha(BCrypt.hashpw(senha, BCrypt.gensalt(12)));
@@ -77,7 +79,7 @@ public class UsarioService extends GenericService<Usuario, UsuarioRepository> {
 		usuario.setDataExpiracaoSenha(cal.getTime());
 		usuario.setNotificadoExpiracaoSenha(false);
 
-		Set<Papel> permissoes = new HashSet<Papel> (usuario.getPermissoes());
+		Set<Papel> permissoes = new HashSet<Papel> ();
 		Papel papelUsuarioComum = papelRepository.findByCodigoAndAtivoTrue("USUARIO_COMUM");
 		if(!permissoes.contains(papelUsuarioComum)) {
 			permissoes.add(papelUsuarioComum);

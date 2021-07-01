@@ -5,9 +5,6 @@ public enum PapelResponsabilidade {
 	GERENTE("Gerente"),
 	USUARIO("Usuário"),
 	SECRETARIA("Secretária"),
-	ANALISTA_MB("Analista do Laboratório Micro-Biológico"),
-	ANALISTA_FQ("Analista do Laboratório Físico-Químico"),
-	ANALISTA_CP("Analista do Controle em Processo"),
 	RESPONSAVEL("Responsável"),
 	EXECUTANTE("Executante");
 

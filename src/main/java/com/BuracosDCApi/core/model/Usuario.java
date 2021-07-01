@@ -121,7 +121,6 @@ public class Usuario extends GenericEntity implements UserDetails {
 	/**
 	 * @return the senha
 	 */
-	@JsonIgnore
 	public String getSenha() {
 		return senha;
 	}
@@ -299,6 +298,6 @@ public class Usuario extends GenericEntity implements UserDetails {
 
 	@Override
 	public String toString() {
-		return "Usuario [login=" + login + ", senha=" + senha + "]";
+		return "Usuario [login=" + login + ", senha=" + senha + ", email="+ email + "]";
 	}
 }

@@ -10,12 +10,9 @@ import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
-import org.hibernate.envers.Audited;
-
 import com.BuracosDCApi.core.generics.GenericEntity;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
-@Audited
 @Entity
 @Table(name = "arquivo", schema = "public")
 @AttributeOverride(name = "id", column = @Column(name = "id_arquivo"))
@@ -37,24 +34,24 @@ public class Arquivo extends GenericEntity {
 	 * Descrição do arquivo
 	 */
 	private String descricao;
-	
+
 	private String formato;
-	
+
 	private Boolean isDirectory = false;
-	
+
 	private Boolean isRoot = false;
 
 	/**
 	 * Caminho do arquivo no servidor
 	 */
 	private String path;
-	
-	@OneToMany(mappedBy="diretorio")
+
+	@OneToMany(mappedBy = "diretorio")
 	public Set<Arquivo> arquivos;
-	
+
 	@JsonIgnore
 	@ManyToOne
-	@JoinColumn(name="diretorio")
+	@JoinColumn(name = "diretorio")
 	public Arquivo diretorio;
 
 	/**
@@ -215,7 +212,7 @@ public class Arquivo extends GenericEntity {
 	public void setIsRoot(Boolean isRoot) {
 		this.isRoot = isRoot;
 	}
-	
+
 	@JsonIgnore
 	public String getDirName() {
 		return path != null ? path + nome + "/" : nome + "/";

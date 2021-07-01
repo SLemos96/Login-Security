@@ -27,7 +27,6 @@ public class Papel extends GenericEntity implements GrantedAuthority {
 
 	private static final long serialVersionUID = 1L;
 
-
 	/**
 	 * Código do papel
 	 */
@@ -39,7 +38,7 @@ public class Papel extends GenericEntity implements GrantedAuthority {
 	 */
 	@Column(name = "descricao", columnDefinition = "varchar(500)", nullable = true)
 	private String descricao;
-	
+
 	@ElementCollection
 	@CollectionTable(name = "rotas", joinColumns = @JoinColumn(name = "id_papel"))
 	@Column(name = "operacoes")
@@ -52,7 +51,7 @@ public class Papel extends GenericEntity implements GrantedAuthority {
 	private List<String> modulos = new ArrayList<String>();
 
 	private PapelResponsabilidade responsabilidade;
-	
+
 	public Papel() {
 		super();
 	}

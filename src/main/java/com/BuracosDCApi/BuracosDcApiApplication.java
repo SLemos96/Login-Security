@@ -18,7 +18,8 @@ import com.BuracosDCApi.core.configs.StorageProperties;
 @SpringBootApplication(scanBasePackages = "com.BuracosDCApi")
 @ComponentScan(basePackageClasses = BuracosDcApiApplication.class)
 @EntityScan("com.BuracosDCApi")
-@EnableJpaRepositories(basePackages = { "com.BuracosDCApi.core.repository", "com.BuracosDCApi.repository", "com.BuracosDCApi.exemplo" })
+@EnableJpaRepositories(basePackages = { "com.BuracosDCApi.core.repository", "com.BuracosDCApi.repository",
+		"com.BuracosDCApi.exemplo" })
 @EnableConfigurationProperties({ StorageProperties.class })
 @EnableScheduling
 public class BuracosDcApiApplication {
@@ -28,6 +29,9 @@ public class BuracosDcApiApplication {
 	}
 
 	public static void main(String[] args) {
+//		System.err.println("senha");
+//		System.err.println(BCrypt.hashpw("teste", BCrypt.gensalt(12)));
+		// descomente para criar senhas manuais
 		SpringApplication.run(BuracosDcApiApplication.class, args);
 	}
 

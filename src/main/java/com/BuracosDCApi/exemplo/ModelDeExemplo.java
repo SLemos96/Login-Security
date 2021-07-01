@@ -14,7 +14,7 @@ import com.BuracosDCApi.core.generics.GenericEntity;
 // vou deixar o schema comentado mas caso vc queria utilizar é o seguinte:
 // vc vai ter que criar o schema antes de rodar o projeto
 // no dbeaver é bem simples e intuitivo, clicou no banco > schemas > create new schema
-// no psql é "\c buracodc" > "create schema teste;"(n esquece o ; no create schema)
+// no psql é "\c buracodc"(para meio que entrar no banco de dados) > "create schema teste;"(n esquece o ; no create schema)
 @AttributeOverride(name = "id", column = @Column(name = "id_nome_tabela"))
 public class ModelDeExemplo extends GenericEntity {
 

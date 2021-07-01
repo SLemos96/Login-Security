@@ -14,7 +14,7 @@ public interface ExemploRepository extends GenericRepository<ModelDeExemplo> {
 	@Query("select m from ModelDeExemplo m")
 	public ModelDeExemplo findModels();
 
-	@Query(value = "select * from teste.model_de_exemplo", nativeQuery = true) // caso vc
+	@Query(value = "select * from teste.model_de_exemplo", nativeQuery = true)
 	public ModelDeExemplo findModelsNativo();
 
 	// as duas query acima fazem a mesma coisa de formas diferentes, existem coisas
@@ -32,14 +32,12 @@ public interface ExemploRepository extends GenericRepository<ModelDeExemplo> {
 	// select m from ModelDeExemplo where ativo=:ativo
 
 	// voce pode retornar basicamente qualquer coisa, desde que consiga castar
-	// corretamente
-	// como foi retornado uma lista acima
+	// corretamente como foi retornado uma lista acima
 	// só cuidado com a native query, pois obviamente vc pode dar um select
 	// <campoEspecifico> from ... e retornar só alguns campos
 
 	// AH E INFORMAÇÂO DE EXTREEEMA IMPORTANCIA
 	// Se tu colocar private ou protected em qualquer metodo aqui da uma merda do
-	// kct
-	// então SEMPRE deixa eles assim public
+	// kct então SEMPRE deixa eles assim public
 
 }

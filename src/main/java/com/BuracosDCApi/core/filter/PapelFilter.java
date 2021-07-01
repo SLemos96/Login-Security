@@ -81,7 +81,6 @@ public class PapelFilter implements Filter {
 		if (auth != null && isAuthenticated()) {
 			for (GrantedAuthority authority : auth.getAuthorities()) {
 				p = papelService.getMapaDePapeis().get(authority.getAuthority());
-				
 				if(hasOperation(request, p)) return true;
 			}
 		}
@@ -92,7 +91,7 @@ public class PapelFilter implements Filter {
 		if(request.getMethod().contains("OPTION")) return true;
 		String verbo = request.getMethod();
 		String rota = obterUrlDoController(request);
-
+		
 		if(rota == null || papel == null) {
 			return false;
 		}
@@ -114,7 +113,7 @@ public class PapelFilter implements Filter {
 
 		String[] chuncks = uri.split("/");
 		if (chuncks.length > 3) {
-			return "/"+chuncks[2]+"/"+chuncks[3];
+			return "/"+chuncks[2];
 		}
 		return null;
 	}

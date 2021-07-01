@@ -25,11 +25,11 @@ import com.BuracosDCApi.core.model.Papel;
 import com.BuracosDCApi.core.model.Usuario;
 import com.BuracosDCApi.core.security.UsuarioHelper;
 import com.BuracosDCApi.core.service.PapelService;
-import com.BuracosDCApi.core.service.UsarioService;
+import com.BuracosDCApi.core.service.UsuarioService;
 
 @RestController
 @RequestMapping("/usuario")
-public class UsuarioController extends GenericRestController<Usuario, UsarioService> {
+public class UsuarioController extends GenericRestController<Usuario, UsuarioService> {
 
 	@Autowired
 	PapelService papelService;

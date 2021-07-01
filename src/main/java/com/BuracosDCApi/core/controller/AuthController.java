@@ -27,7 +27,7 @@ import com.BuracosDCApi.core.model.Papel;
 import com.BuracosDCApi.core.model.Usuario;
 import com.BuracosDCApi.core.security.AuthenticationHelper;
 import com.BuracosDCApi.core.security.JwtTokenProvider;
-import com.BuracosDCApi.core.service.UsarioService;
+import com.BuracosDCApi.core.service.UsuarioService;
 import com.BuracosDCApi.core.util.LoggedUserStore;
 
 
@@ -45,7 +45,7 @@ public class AuthController {
 	JwtTokenProvider jwtTokenProvider;
 
 	@Autowired
-	UsarioService usuarioService;
+	UsuarioService usuarioService;
 	
 	@Autowired
 	LoggedUserStore userStore;
